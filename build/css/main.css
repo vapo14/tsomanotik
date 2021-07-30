@@ -1,0 +1,108 @@
+.shadowed {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(51, 51, 51, 0.37));
+  filter: drop-shadow(0px 0px 5px rgba(51, 51, 51, 0.37));
+}
+
+nav {
+  z-index: 1000;
+  min-height: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+.btn.btn-primary {
+  background-color: #00bfad;
+  border-color: transparent;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem #00bfac4b;
+}
+
+.backToTopBtn {
+  border: none;
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  color: #33aa5d;
+  transition: all 2s linear;
+}
+
+footer {
+  margin: 0;
+  background-color: #f8f5ec;
+  min-height: 40vh;
+  padding: 2rem;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  transition: ease-in-out 300ms;
+  height: 0.25rem;
+  content: "";
+  position: absolute;
+  background-color: #00bfad;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 4px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 85%;
+}
+
+/**  +---------------+ Historia +---------------+ **/
+
+.bold-raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold !important;
+}
+.tsomano-1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #33aa5d;
+  font-weight: 700;
+}
+.tsomano-2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #e52278;
+  font-weight: 700;
+}
+
+.tsomano-3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #16b2e4;
+  font-weight: 700;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 29px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -12px rgba(0, 0, 0, 0.75);
+}

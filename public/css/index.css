@@ -1,0 +1,47 @@
+.jumbotron {
+  max-height: 100vh;
+  height: fit-content;
+  margin-top: -4rem;
+}
+
+.jumbotron-mobile {
+  display: none;
+}
+.homeOverlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: rgba(51, 51, 51, 0.589);
+  height: 100%;
+  width: 50%;
+  color: white;
+}
+
+.vertical-center {
+  margin: 0;
+  margin-left: 10rem;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 760px) {
+  .jumbotron {
+    display: none;
+  }
+  .jumbotron-mobile {
+    display: block;
+  }
+  .homeOverlay {
+    height: 70vh;
+    width: 100%;
+    left: 0;
+  }
+  .vertical-center {
+    top: 40%;
+    margin-left: 2rem;
+    -ms-transform: none;
+    transform: none;
+  }
+}
